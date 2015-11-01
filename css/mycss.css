@@ -1,0 +1,112 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+.head{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background: red;
+    min-height: 200px;
+}
+.middle_left{
+
+    -webkit-order:-1;
+    -moz-order:-1;
+    -ms:-1;
+    -o:-1;
+    /*这是兼容firefox但编辑器显示器，去掉了又没效果*/
+    order:-1;
+    height: 9999px;
+    width: 200px;
+    background:dodgerblue;
+    overflow: hidden;
+    text-overflow:ellipsis;
+
+}
+.middle_middle{
+    text-align: center;
+    background: yellowgreen;
+    overflow-y: auto;
+    -webkit-flex:1;
+    -ms-flex:1;
+    -o-flex:1;
+    -moz-flex:1;
+    flex:1;
+    overflow: hidden;
+}
+.middle_right{
+    width: 200px;
+    height: 9999px;
+    background: palevioletred;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /*以下兼容firefox*/
+
+}
+.foot{
+    text-align: center;
+    width: 100%;
+    background: green;
+    height: 200px;
+    min-height: 200px;
+}
+
+
+.container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    display: box;
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    -ms-flex-direction:column;
+    -o-flex-direction:column;
+    flex-direction:column;
+    -webkit-flex:1;
+    -ms-flex:1;
+    -o-flex:1;
+    -moz-flex:1;
+    flex:1;
+    display: flex;
+    height:100%;
+
+    /*以下兼容firefox*/
+}
+
+.middle{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    display: box;
+    -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    -ms-flex-direction:row;
+    -o-flex-direction:row;
+    flex-direction:row;
+    -webkit-flex:1;
+    -ms-flex:1;
+    -o-flex:1;
+    -moz-flex:1;
+    flex:1;
+    height: 10%;
+   overflow: hidden;
+/*上面的overflow: hidden;必须加上，不加不兼容firefox*/
+
+}
